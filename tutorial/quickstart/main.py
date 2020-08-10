@@ -1,4 +1,5 @@
-import json, requests
+import json
+import requests
 
 
 def main():
@@ -9,6 +10,7 @@ def main():
     data_str = {'username': 'admin', 'password': 'password123'}
     data = json.dumps(data_str)
     response = requests.get(url, auth=(username, password))
+
     print(response.status_code)
     print(response.headers['content-type'])
     print(response.encoding)
