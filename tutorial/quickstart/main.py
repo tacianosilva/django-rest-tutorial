@@ -6,7 +6,7 @@ def main():
     print("Teste API")
     url = "http://localhost:8000/groups/"
     username = 'admin'
-    password = 'password123'
+    password = '12345'
     data_str = {'username': 'admin', 'password': 'password123'}
     data = json.dumps(data_str)
     response = requests.get(url, auth=(username, password))
